@@ -1,0 +1,59 @@
+/* rests the browser margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* makes sure you can't scrol with the finger */
+body {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  touch-action: none;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#bag {
+  grid-column: 1;
+  grid-row: 1;
+  width: 50%;
+}
+
+#front {
+  grid-column: 1;
+  grid-row: 1;
+  width: 50%;
+}
+/* brakes the site so looks different on a tablet */
+@media (max-width: 768px) {
+  #bag {
+    grid-column: 1;
+    grid-row: 1;
+    width: 80%;
+  }
+
+  #front {
+    grid-column: 1;
+    grid-row: 1;
+    width: 80%;
+  }
+}
+/* it looks different on a phone */
+@media (max-width: 480px) {
+  #bag {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  #front {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+  }
+}
