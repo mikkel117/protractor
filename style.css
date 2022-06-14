@@ -6,7 +6,7 @@
 
 /* makes sure you can't scrol with the finger */
 body {
-  background: black;
+  background: rgb(162, 159, 159);
   width: 100vw;
   height: 100vh;
   touch-action: none;
@@ -21,13 +21,13 @@ body {
 #bag {
   grid-column: 1;
   grid-row: 1;
-  width: 50%;
+  width: 45%;
 }
 
 #front {
   grid-column: 1;
   grid-row: 1;
-  width: 50%;
+  width: 45%;
 }
 /* brakes the site so looks different on a tablet */
 @media (max-width: 768px) {
