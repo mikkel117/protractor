@@ -1,5 +1,3 @@
-//https://stackoverflow.com/questions/13863974/rotate-element-based-on-touch-event
-
 //gets the window width
 let windows = {
   width: document.documentElement.clientWidth,
